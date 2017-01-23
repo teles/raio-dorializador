@@ -1,10 +1,3 @@
-# Dórializador
-
-Plugin chrome para deixar sua internet tão cinza quanto a cidade de SP sob a gestão Dória.
-
-Código do plugin:
-
-```javascript
 function changeAllImagesToPlaceholders(){
 	var images = document.getElementsByTagName("img");
 
@@ -26,4 +19,3 @@ makeEverythingGrayscale();
         changeAllImagesToPlaceholders();
     };
 })(XMLHttpRequest);
-```

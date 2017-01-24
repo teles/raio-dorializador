@@ -4,6 +4,7 @@ function changeAllImagesToGrey () {
 		i.removeAttribute('src');
 		i.style.backgroundColor = '#a5a0a0';
 	});
+
 }
 
 function makeEverythingGrayscale () {

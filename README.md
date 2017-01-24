@@ -5,25 +5,24 @@ Plugin chrome para deixar sua internet tão cinza quanto a cidade de SP sob a ge
 Código do plugin:
 
 ```javascript
-function changeAllImagesToPlaceholders(){
-	var images = document.getElementsByTagName("img");
-
-	for(var i=0; i < images.length; i++) {
-		var image = images[i];
-		image.setAttribute("src", "https://placeholdit.imgix.net/~text?txtsize=33&txt=&w="+image.width+"&h="+image.height);
-	}
+function changeAllImagesToGrey () {
+	var images = Array.from(document.getElementsByTagName("img"));
+	images.forEach(function (i) {
+		i.removeAttribute('src');
+		i.style.backgroundColor = '#a5a0a0';
+	});
 }
 
-function makeEverythingGrayscale(){
+function makeEverythingGrayscale () {
 	document.getElementsByTagName("html")[0].style.filter = "grayscale(100%)";
 }
 
-changeAllImagesToPlaceholders();
+changeAllImagesToGrey();
 makeEverythingGrayscale();
 
-(function(XHR) {
-    XHR.prototype.open = function() {
-        changeAllImagesToPlaceholders();
+(function (XHR) {
+    XHR.prototype.open = function () {
+        changeAllImagesToGrey();
     };
 })(XMLHttpRequest);
 ```

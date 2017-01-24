@@ -1,21 +1,20 @@
-function changeAllImagesToPlaceholders(){
-	var images = document.getElementsByTagName("img");
-
-	for(var i=0; i < images.length; i++) {
-		var image = images[i];
-		image.setAttribute("src", "http://placehold.it/"+image.width+"x"+image.height);
-	}
+function changeAllImagesToGrey () {
+	var images = Array.from(document.getElementsByTagName("img"));
+	images.forEach(function (i) {
+		i.removeAttribute('src');
+		i.style.backgroundColor = '#a5a0a0';
+	});
 }
 
-function makeEverythingGrayscale(){
+function makeEverythingGrayscale () {
 	document.getElementsByTagName("html")[0].style.filter = "grayscale(100%)";
 }
 
-changeAllImagesToPlaceholders();
+changeAllImagesToGrey();
 makeEverythingGrayscale();
 
-(function(XHR) {
-    XHR.prototype.open = function() {
-        changeAllImagesToPlaceholders();
+(function (XHR) {
+    XHR.prototype.open = function () {
+        changeAllImagesToGrey();
     };
 })(XMLHttpRequest);

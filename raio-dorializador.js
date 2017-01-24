@@ -1,4 +1,4 @@
-function changeAllImagesToGrey () {
+function changeAllImagesToGray () {
 	var images = Array.from(document.getElementsByTagName("img"));
 	images.forEach(function (i) {
 		i.removeAttribute('src');
@@ -11,11 +11,11 @@ function makeEverythingGrayscale () {
 	document.getElementsByTagName("html")[0].style.filter = "grayscale(100%)";
 }
 
-changeAllImagesToGrey();
+changeAllImagesToGray();
 makeEverythingGrayscale();
 
 (function (XHR) {
     XHR.prototype.open = function () {
-        changeAllImagesToGrey();
+        changeAllImagesToGray();
     };
 })(XMLHttpRequest);

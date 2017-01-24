@@ -10,7 +10,7 @@ function changeAllImagesToPlaceholders(){
 
 	for(var i=0; i < images.length; i++) {
 		var image = images[i];
-		image.setAttribute("src", "http://placehold.it/"+image.width+"x"+image.height);
+		image.setAttribute("src", "https://placeholdit.imgix.net/~text?txtsize=33&txt=&w="+image.width+"&h="+image.height);
 	}
 }
 

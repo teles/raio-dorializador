@@ -31,7 +31,7 @@ makeEverythingGrayscale();
 
 ## Próximos passos:
 
-* Habilitar ícone da extensão com botão liga/desliga;
+* ~~Habilitar ícone da extensão com botão liga/desliga;~~
 * Empacotar código como extensão baixável pelo site de addon do Chrome;
 * Adicionar sessão sobre como instalar no README, com link;
 * Adicionar gif mostrando a utilização do plugin em uma página do google imagens com antes e depois;

@@ -42,3 +42,4 @@ makeEverythingGrayscale();
 
 * [William Oliveira](https://www.github.com/woliveiras)
 * [Daniel Rubin](https://www.github.com/dann95)
+* [Rafael Kato](https://www.github.com/rafakato)

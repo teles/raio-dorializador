@@ -1,7 +1,10 @@
+<img src="https://cloud.githubusercontent.com/assets/762639/22410056/3ce4cbce-e67a-11e6-8dfd-b39635ea1172.jpg" width="150px" align="left">
+
 # Raio Dórializador
 
-Plugin chrome para deixar sua internet tão cinza quanto a cidade de SP sob a gestão João Dória.
+Plugin chrome para deixar sua internet tão cinza quanto a cidade de SP sob a gestão João Dória. 
 
+<br><br>
 ### Código do plugin:
 
 Ao instalar o plugin todas as páginas do seu navegador ficarão lindas, isto é, cinzas. O código que faz isso pode ser visto a seguir:
